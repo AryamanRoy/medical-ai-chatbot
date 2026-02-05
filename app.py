@@ -19,7 +19,7 @@ app.add_middleware(
 )
 
 # Gemini client
-client = genai.Client(api_key="AIzaSyBRCC0MvVSv-aB3h20FtCloOeZdTsE3ThI")
+client = genai.Client(api_key="API KEY")
 
 @app.post("/chat/")
 async def chat_endpoint(text: str = Form(...)):
